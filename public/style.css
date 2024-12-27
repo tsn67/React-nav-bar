@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jura:wght@300..700&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter Tight", serif;;
+}
+
+#root {
+    width: 100%;
+}
+
+body {
+    height: 300vh;
+    background: rgb(25, 25, 25);
+}
+
+.nav-bar {
+    font-size: 1.1rem;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 17px 10%;
+    background: #010102ed;
+}
+
+.nav-bar > .nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container > .home {
+    display: flex;
+    align-items: center;
+}
+
+.nav-container > ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-container > ul > li {
+    cursor: pointer;
+    list-style: none;
+    transition: 200ms ease-in;
+}
+
+.nav-container > ul > li:hover {
+    color: white;
+}
+
+.nav-container > button {
+    transition: 100ms ease-in;
+    padding: 4px;
+    background: white;
+    font-weight: normal;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 15px;
+    width: 130px;
+    height: 30px;
+}
+
+.nav-container > button:hover {
+    background: lightgray;
+}
+
+#menu-button {
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: solid rgb(52, 49, 49) 1px;
+}
+
+.hidden-mobile-container {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 100px;
+    width: 100%;
+    background: rgba(26, 26, 29, 0.642);
+    z-index: 50;
+}
+
+.hidden-mobile-container > ul {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    margin-left: 50px;
+    height: 70vh;
+    justify-content: space-around;
+    font-weight: bol;
+    font-size: 1.2rem;
+    transition: 200ms ease-in;
+}
+
+.hidden-mobile-container > ul > li {
+    list-style: none;
+    cursor: pointer;
+    transition: ease-in 200ms;
+}
+
+.hidden-mobile-container > ul > li:hover {
+    color: white;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.focus {
+    color: yellow;
+}
+
+.not-focus {
+    color: grey;
+}
