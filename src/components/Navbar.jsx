@@ -10,6 +10,13 @@ function Navbar(props) {
     useEffect(() => {
         props.setCurrentPath('Home');
 
+        if(window.innerWidth < 1000) {
+            setIsMobile(true);
+        } else {
+            setIsMobile(false);
+            setMenuOpen(false);
+        }
+
         window.addEventListener('resize', ()=> {
             if(window.innerWidth < 1000) {
                 setIsMobile(true);
