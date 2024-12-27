@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from './Navbar';
 import Home from '../pages/Home';
 import Forum from '../pages/Forum';
-import Learningpaths from "../pages/LearningPaths";
+import Learningpaths from "../pages/Learningpaths";
 import Contact from '../pages/Contact';
 import Course from '../pages/Course';
 import Membership from '../pages/Membership';
